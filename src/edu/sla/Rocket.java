@@ -9,7 +9,7 @@ public class Rocket implements Runnable {
         name = number;
         // launchTime is random amount between 2 and 8
         launchTime = 2 + (int)(Math.random() * 8);
-        canLaunch = (launchTime == 0);
+        canLaunch = false;
     }
 
     private void countdown() {
@@ -27,13 +27,8 @@ public class Rocket implements Runnable {
     }
 
     private void launch() {
-        if (canLaunch) {
             System.out.println("Rocket "+ name + " launching!!!!!!");
             System.out.println("");
-        } else {
-            System.out.println("Rocket "+ name + "NOT allowed to launch yet!!!!!!");
-
-        }
     }
 
     public void run() {
