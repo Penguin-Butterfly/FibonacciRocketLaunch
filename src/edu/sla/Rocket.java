@@ -1,8 +1,8 @@
 package edu.sla;
 
-class Rocket implements Runnable {
-    private int id;
+class Rocket implements Launchable {
     private int launchTime;
+    private int id;
     private boolean canLaunch;
     private boolean launched;
 
@@ -17,7 +17,7 @@ class Rocket implements Runnable {
         recursiveMode = mode;
     }
 
-    boolean launched() {
+    public boolean launched() {
         return launched;
     }
 
