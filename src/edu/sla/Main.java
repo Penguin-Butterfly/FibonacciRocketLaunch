@@ -3,6 +3,13 @@ package edu.sla;
 public class Main {
 
     public static void main(String[] args) {
+
+        Fibonacci FibSeq1 = new Sequence(24,0,1);
+        FibSeq1.run();
+
+        Fibonacci FibSeq2 = new Sequence(16,2,2);
+
+        /*
         boolean recursiveMode = false;
         int numRockets = 2;
 
@@ -21,5 +28,6 @@ public class Main {
         }
 
         System.out.println("All Rockets launched successfully!");
+         */
     }
 }
